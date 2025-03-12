@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-49e0dca8e4f4b0276c0a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Calendar",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Calendar::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Calendar-Debug-da79813e405593e5de0e.json",
+					"name" : "Calendar",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Calendar_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Calendar_autogen-Debug-662069b2569204cfb9be.json",
+					"name" : "Calendar_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Calendar_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Calendar_autogen_timestamp_deps-Debug-26e97a41bc2daad77426.json",
+					"name" : "Calendar_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/artembelcikova/Documents/453501/\u041e\u0410\u0438\u041f_2/Lr_2/task1/Calendar/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug",
+		"source" : "/Users/artembelcikova/Documents/453501/\u041e\u0410\u0438\u041f_2/Lr_2/task1/Calendar"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
