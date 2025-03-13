@@ -91,7 +91,7 @@ void MainWindow::on_callUpNextDay_clicked()
     }
     date->setFullDate("09.02.2024");
     date->setleapYear(date->isLeap(date->getFullDate()));
-    date->NextDay();
+    date = date->NextDay();
     QMessageBox::information(this,"Result of Metod - NextDay",QString("Дата следующего дня: %1").arg(QString::fromStdString(date->getFullDate())));
 }
 
@@ -121,6 +121,29 @@ void MainWindow::on_callUpPreviousDay_clicked()
     date->setleapYear(date->isLeap(date->getFullDate()));
     date = date->PreviousDay();
     QMessageBox::information(this,"Result of Metod - PreviousDay",QString("Дата предыдущего дня: %1").arg(QString::fromStdString(date->getFullDate())));
+
+}
+
+
+void MainWindow::on_callUpWeekNumber_clicked()
+{
+    if (date == nullptr) {
+        date = new Date;
+    }
+    short a = date->WeekNumber();
+    QMessageBox::information(this, "Result of Metod - WeekNumber", "Номер недели на текущий момент: " + QString::number(a));
+}
+
+
+void MainWindow::on_callUpDaysTillYourBirthday_clicked()
+{
+    Date bithdaydate;
+    bithdaydate.setFullDate("04.04.2025");
+    if (date == nullptr) {
+        date = new Date;
+    }
+    int result = date->DaysTillYourBithday(bithdaydate);
+    QMessageBox::information(this, "Result of Metod - DaysTillYourBirthday", QString("До дня рождения осталось - %1 дней").arg(result));
 
 }
 

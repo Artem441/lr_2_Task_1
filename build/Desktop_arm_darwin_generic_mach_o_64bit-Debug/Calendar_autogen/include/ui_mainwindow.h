@@ -34,8 +34,10 @@ public:
     QPushButton *callUpDuration;
     QPushButton *callUpIsLeap;
     QPushButton *openFile;
-    QPushButton *callUpNextDay;
+    QPushButton *callUpWeekNumber;
     QPushButton *callUpPreviousDay;
+    QPushButton *callUpNextDay;
+    QPushButton *callUpDaysTillYourBirthday;
     QMenuBar *menubar;
     QMenu *menuDate;
     QStatusBar *statusbar;
@@ -52,7 +54,7 @@ public:
         graphicsView->setGeometry(QRect(180, 30, 611, 531));
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName("groupBox");
-        groupBox->setGeometry(QRect(0, 80, 156, 241));
+        groupBox->setGeometry(QRect(0, 80, 156, 321));
         gridLayout = new QGridLayout(groupBox);
         gridLayout->setObjectName("gridLayout");
         callUpDuration = new QPushButton(groupBox);
@@ -70,15 +72,25 @@ public:
 
         gridLayout->addWidget(openFile, 1, 0, 1, 1);
 
-        callUpNextDay = new QPushButton(groupBox);
-        callUpNextDay->setObjectName("callUpNextDay");
+        callUpWeekNumber = new QPushButton(groupBox);
+        callUpWeekNumber->setObjectName("callUpWeekNumber");
 
-        gridLayout->addWidget(callUpNextDay, 2, 0, 1, 1);
+        gridLayout->addWidget(callUpWeekNumber, 5, 0, 1, 1);
 
         callUpPreviousDay = new QPushButton(groupBox);
         callUpPreviousDay->setObjectName("callUpPreviousDay");
 
         gridLayout->addWidget(callUpPreviousDay, 3, 0, 1, 1);
+
+        callUpNextDay = new QPushButton(groupBox);
+        callUpNextDay->setObjectName("callUpNextDay");
+
+        gridLayout->addWidget(callUpNextDay, 2, 0, 1, 1);
+
+        callUpDaysTillYourBirthday = new QPushButton(groupBox);
+        callUpDaysTillYourBirthday->setObjectName("callUpDaysTillYourBirthday");
+
+        gridLayout->addWidget(callUpDaysTillYourBirthday, 6, 0, 1, 1);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
@@ -105,8 +117,10 @@ public:
         callUpDuration->setText(QCoreApplication::translate("MainWindow", "\320\240\320\260\320\267\320\275\320\270\321\206\320\260 \320\262 \320\264\320\275\321\217\321\205", nullptr));
         callUpIsLeap->setText(QCoreApplication::translate("MainWindow", "\320\222\320\270\321\201\320\276\320\272-\321\213\320\271 \320\270\320\273\320\270 \320\275\320\265\321\202", nullptr));
         openFile->setText(QCoreApplication::translate("MainWindow", "Open File", nullptr));
-        callUpNextDay->setText(QCoreApplication::translate("MainWindow", "NextDay", nullptr));
+        callUpWeekNumber->setText(QCoreApplication::translate("MainWindow", "WeekNumber", nullptr));
         callUpPreviousDay->setText(QCoreApplication::translate("MainWindow", "PreviousDay", nullptr));
+        callUpNextDay->setText(QCoreApplication::translate("MainWindow", "NextDay", nullptr));
+        callUpDaysTillYourBirthday->setText(QCoreApplication::translate("MainWindow", "DaysTillBirthday", nullptr));
         menuDate->setTitle(QCoreApplication::translate("MainWindow", "Date", nullptr));
     } // retranslateUi
 

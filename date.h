@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include <cmath>
+#include <QDateTime>
 
 
 
@@ -25,6 +26,9 @@ public:
     std::string getDate2();
     void setleapYear(bool leapYear);
     bool getleapYear();
+    short WeekNumber();
+    int DaysTillYourBithday(Date bithdaydate);
+    void setDay(int _day);
 private:
     bool leapYear;
     int day;

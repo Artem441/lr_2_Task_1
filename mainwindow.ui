@@ -30,7 +30,7 @@
       <x>0</x>
       <y>80</y>
       <width>156</width>
-      <height>241</height>
+      <height>321</height>
      </rect>
     </property>
     <property name="title">
@@ -58,10 +58,10 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="0">
-      <widget class="QPushButton" name="callUpNextDay">
+     <item row="5" column="0">
+      <widget class="QPushButton" name="callUpWeekNumber">
        <property name="text">
-        <string>NextDay</string>
+        <string>WeekNumber</string>
        </property>
       </widget>
      </item>
@@ -69,6 +69,20 @@
       <widget class="QPushButton" name="callUpPreviousDay">
        <property name="text">
         <string>PreviousDay</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="callUpNextDay">
+       <property name="text">
+        <string>NextDay</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QPushButton" name="callUpDaysTillYourBirthday">
+       <property name="text">
+        <string>DaysTillBirthday</string>
        </property>
       </widget>
      </item>

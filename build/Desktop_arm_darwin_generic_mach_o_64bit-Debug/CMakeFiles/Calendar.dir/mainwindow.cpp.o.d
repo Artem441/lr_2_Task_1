@@ -1226,6 +1226,7 @@ CMakeFiles/Calendar.dir/mainwindow.cpp.o: \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtWidgets.framework/Headers/qgridlayout.h \
   /Users/artembelcikova/Documents/453501/ОАиП_2/Lr_2/task1/Calendar/date.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/iostream \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/QDateTime \
   /Users/artembelcikova/Documents/453501/ОАиП_2/Lr_2/task1/Calendar/build/Desktop_arm_darwin_generic_mach_o_64bit-Debug/Calendar_autogen/include/./ui_mainwindow.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/QVariant \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/QAction \

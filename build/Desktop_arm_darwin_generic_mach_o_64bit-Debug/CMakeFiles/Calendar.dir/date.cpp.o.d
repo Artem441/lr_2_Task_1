@@ -958,10 +958,9 @@ CMakeFiles/Calendar.dir/date.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__format/formatter_tuple.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/print \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/unistd.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtWidgets.framework/Headers/QMessageBox \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtWidgets.framework/Headers/qmessagebox.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qtguiglobal.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/QDateTime \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qdatetime.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qcalendar.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qglobal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/assert.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/_assert.h \
@@ -1014,27 +1013,16 @@ CMakeFiles/Calendar.dir/date.cpp.o: \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qtresource.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qttranslation.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qversiontagging.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qtgui-config.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qtguiexports.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtWidgets.framework/Headers/qtwidgets-config.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtWidgets.framework/Headers/qtwidgetsexports.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtWidgets.framework/Headers/qdialog.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtWidgets.framework/Headers/qwidget.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qwindowdefs.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qobjectdefs.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qnamespace.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qlocale.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qvariant.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qcompare.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qcomparehelpers.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/q20type_traits.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qtmetamacros.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qfunctionaltools_impl.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qobject.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qstring.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qchar.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qstringview.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qmetatype.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qbytearray.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qrefcount.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qnamespace.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qtmetamacros.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qarraydata.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qpair.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qarraydatapointer.h \
@@ -1046,6 +1034,14 @@ CMakeFiles/Calendar.dir/date.cpp.o: \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qbytearrayalgorithms.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qbytearrayview.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qstringfwd.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qdatastream.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qscopedpointer.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qiodevicebase.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qfloat16.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qhashfunctions.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qstring.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qchar.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qstringview.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qstringliteral.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qstringalgorithms.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qlatin1stringview.h \
@@ -1055,8 +1051,6 @@ CMakeFiles/Calendar.dir/date.cpp.o: \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qstringbuilder.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qstringconverter.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qstringconverter_base.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qlist.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qhashfunctions.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/numeric \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__numeric/accumulate.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h \
@@ -1071,27 +1065,25 @@ CMakeFiles/Calendar.dir/date.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__numeric/saturation_arithmetic.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qiterator.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qbytearraylist.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qstringlist.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qalgorithms.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qstringmatcher.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qscopedpointer.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qmetatype.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qdatastream.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qiodevicebase.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qfloat16.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qmath.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qalgorithms.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qiterable.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qmetacontainer.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qcontainerinfo.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qtaggedpointer.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qobjectdefs.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qfunctionaltools_impl.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qscopeguard.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/list \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/map \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__tree \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qobject_impl.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qbindingstorage.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qdebug.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qtextstream.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qcontiguouscache.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qsharedpointer.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qshareddata.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qsharedpointer_impl.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/chrono \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__chrono/calendar.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h \
@@ -1109,8 +1101,32 @@ CMakeFiles/Calendar.dir/date.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/__chrono/literals.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/forward_list \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qmargins.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qlist.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qiterator.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qbytearraylist.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qstringlist.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qstringmatcher.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qmap.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qshareddata_impl.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qset.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qhash.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qvarlengtharray.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/q23utility.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qobject.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qobject_impl.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qbindingstorage.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtWidgets.framework/Headers/QMessageBox \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtWidgets.framework/Headers/qmessagebox.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qtguiglobal.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qtgui-config.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qtguiexports.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtWidgets.framework/Headers/qtwidgets-config.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtWidgets.framework/Headers/qtwidgetsexports.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtWidgets.framework/Headers/qdialog.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtWidgets.framework/Headers/qwidget.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qwindowdefs.h \
+  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qmargins.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qaction.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qkeysequence.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qicon.h \
@@ -1122,7 +1138,6 @@ CMakeFiles/Calendar.dir/date.cpp.o: \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qcolor.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qrgb.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qrgba64.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qshareddata.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qimage.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qpixelformat.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qtransform.h \
@@ -1132,17 +1147,6 @@ CMakeFiles/Calendar.dir/date.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk/usr/include/c++/v1/cassert \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/q20iterator.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qline.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qvariant.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qdebug.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qtextstream.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qcontiguouscache.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qsharedpointer.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qsharedpointer_impl.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qmap.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qshareddata_impl.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qset.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qhash.h \
-  /Users/artembelcikova/Qt/6.8.2/macos/lib/QtCore.framework/Headers/qvarlengtharray.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qpalette.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qbrush.h \
   /Users/artembelcikova/Qt/6.8.2/macos/lib/QtGui.framework/Headers/qfont.h \

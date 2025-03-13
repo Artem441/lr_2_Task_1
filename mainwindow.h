@@ -38,6 +38,10 @@ private slots:
 
     void on_callUpPreviousDay_clicked();
 
+    void on_callUpWeekNumber_clicked();
+
+    void on_callUpDaysTillYourBirthday_clicked();
+
 private:
     Ui::MainWindow *ui;
     QGraphicsScene* MainScene;

@@ -12,6 +12,7 @@ int Date::stringIntoNumber(std::string str)
     int Sum = 0;
     int buffer = 0;
     int age;
+    int month;
     bool isLeap = false;
     for (int i = 0; i < str.length(); ++i) {
         if ((str[i] == '.') && (buffer == 0)) {
@@ -26,6 +27,7 @@ int Date::stringIntoNumber(std::string str)
             ++i;
             ++buffer;
             Month = PartOfDate;
+            month = std::stoi(Month);
             //qDebug()<<PartOfDate;
             PartOfDate.clear();
 
@@ -44,10 +46,10 @@ int Date::stringIntoNumber(std::string str)
     buffer = age / 4;
     Sum += buffer; // учет 1 доп дня в високосном году
     Sum += age * 365;// осталось учесть месяц
-    if (Month == "01") {
+    if (month > 1) {
         Sum += 31;
     }
-    else if (Month == "02") {
+    if (month > 2) {
         if (isLeap == true) {
             Sum += 29;
         }
@@ -55,38 +57,32 @@ int Date::stringIntoNumber(std::string str)
             Sum += 28;
         }
     }
-    else if (Month == "03") {
-        Sum += 31;
-    }
-    else if (Month == "04") {
+    if (month > 3) {
         Sum += 30;
     }
-    else if (Month == "05") {
+    if (month > 4) {
         Sum += 31;
     }
-    else if (Month == "06") {
+    if (month > 5) {
         Sum += 30;
     }
-    else if (Month == "07") {
+    if (month > 6) {
         Sum += 31;
     }
-    else if (Month == "08") {
+    if (month > 7) {
         Sum += 31;
     }
-    else if (Month == "09") {
+    if (month > 8) {
         Sum += 30;
     }
-    else if (Month == "10") {
+    if (month > 9) {
         Sum += 31;
     }
-    else if (Month == "11") {
+    if (month > 10) {
         Sum += 30;
     }
-    else if (Month == "12") {
-        Sum += 31;
-    }
-    else {
-        return -1;
+    if (month > 11) {
+        Sum += 30;
     }
     return Sum;
 }
@@ -183,7 +179,7 @@ Date* Date::NextDay()
         result += "0";
     }
     result += std::to_string(age);
-    this->FullDate = result;
+    date->FullDate = result;
     return date;
     delete date;
 }
@@ -232,11 +228,11 @@ Date* Date::PreviousDay()
         year -= 1;
         month = 0;
     }
-    else if ((month == 3)  && (day == 1) && (leap == true))   {
+    else if ((month == 3)  && (day == 1) && (leapYear == true))   {
         day = 29;
         month -= 1;
     }
-    else if ((month == 3)  && (day == 1) && (leap == false))   {
+    else if ((month == 3)  && (day == 1) && (leapYear == false))   {
         day = 28;
         month -= 1;
     }
@@ -273,7 +269,7 @@ Date* Date::PreviousDay()
         result += "0";
     }
     result += std::to_string(age);
-    this->FullDate = result;
+    date->FullDate = result;
     return date;
     delete date;
 }
@@ -337,6 +333,34 @@ void Date::setleapYear(bool leap)
 bool Date::getleapYear()
 {
     return this->leapYear;
+}
+
+short Date::WeekNumber()
+{
+    QDate currentDate = QDate::currentDate();
+    return currentDate.weekNumber();
+}
+
+int Date::DaysTillYourBithday(Date bithdaydate)
+{
+    // тукущую дату нужно засунуть в Qstring
+    QDate currentDate = QDate::currentDate();
+    QString dateString = currentDate.toString("dd.MM.yyyy");
+    std::string result = dateString.toStdString();
+    int date1 = stringIntoNumber(result);
+    int date2 = stringIntoNumber(bithdaydate.getFullDate());
+    qDebug() << result;
+    qDebug() << date1;
+    qDebug() << date2;
+
+    int a = abs(date1 - date2);
+
+    return a;
+}
+
+void Date::setDay(int _day)
+{
+    this->day = _day;
 }
 
 
